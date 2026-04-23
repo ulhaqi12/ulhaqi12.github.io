@@ -27,6 +27,18 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .skill-tag { background: color-mix(in srgb, var(--accent-color), transparent 88%); color: var(--accent-color); border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%); border-radius: 20px; padding: 5px 14px; font-size: 0.85rem; font-weight: 500; }
+    .tech-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+    .tech-tag { background: color-mix(in srgb, var(--accent-color), transparent 88%); color: var(--accent-color); border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%); border-radius: 20px; padding: 3px 11px; font-size: 0.78rem; font-weight: 500; }
+    .project-company { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-color); font-weight: 600; display: block; margin-bottom: 6px; }
+    .open-to-box { background: color-mix(in srgb, var(--accent-color), transparent 92%); border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%); border-radius: 10px; padding: 18px 22px; margin-top: 20px; }
+    .open-to-box h5 { color: var(--accent-color); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+    .open-to-box .open-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .open-to-box .open-tag { background: color-mix(in srgb, var(--accent-color), transparent 80%); color: var(--accent-color); border-radius: 20px; padding: 4px 13px; font-size: 0.82rem; font-weight: 500; }
+  </style>
+
   <!-- =======================================================
   * Template Name: SnapFolio
   * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
@@ -47,7 +59,7 @@
           <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
           <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
           <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-          <!-- <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li> -->
+          <li><a href="#projects"><i class="bi bi-grid navicon"></i> Projects</a></li>
           <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
           <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -103,7 +115,7 @@
                 <p class="description">ML Engineer II at Smartly in Helsinki, building AI-powered products. Previously led GenAI platform development at Nokia — LLMs, RAG, agentic workflows, and Kubernetes-native microservices with observability-first design.</p>
 
                 <div class="hero-actions">
-                  <!-- <a href="#portfolio" class="btn btn-primary">View My Work</a> -->
+                  <a href="#projects" class="btn btn-primary">View My Work</a>
                   <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
 
@@ -162,10 +174,6 @@
                     <i class="bi bi-envelope"></i>
                     ulhaqi12@gmail.com
                   </a>
-                  <a href="tel:+358451960065" class="contact-item">
-                    <i class="bi bi-telephone"></i>
-                    +358 45 1960065
-                  </a>
                   <a href="#" class="contact-item">
                     <i class="bi bi-geo-alt"></i>
                     Helsinki, Finland
@@ -183,47 +191,9 @@
               </div>
 
               <div class="description">
-                <p>ML Engineer II at Smartly in Helsinki, with 6+ years spanning machine learning, NLP, and cloud-native software engineering. Previously an AI Tech Lead at Nokia where I led end-to-end development of a modular GenAI platform — RAG pipelines, agentic workflows, and distributed LLM training on private Kubernetes clusters.</p>
+                <p>ML Engineer II at Smartly in Helsinki, with 6+ years spanning machine learning, NLP, and cloud-native software engineering. Previously an AI Tech Lead at Nokia, where I led a team building a production GenAI platform — RAG pipelines, agentic workflows, and distributed LLM training deployed on private Kubernetes clusters.</p>
 
-                <p>I’ve evaluated open LLMs (Llama 3, Mistral, Gemma) using benchmarks like ROUGE, BLEU, BERTScore, and LLM-as-judge. Erasmus Mundus scholar with dual Master’s in EDISS (Åbo Akademi) and Intelligent Systems (UIB, Spain). I love mentoring engineers and shipping robust, observable systems.</p>
-              </div>
-
-              <div class="stats-grid">
-                <div class="stat-item">
-                  <div class="stat-number">20+</div>
-                  <div class="stat-label">ML/AI Projects</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">6+</div>
-                  <div class="stat-label">Years Experience</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">3</div>
-                  <div class="stat-label">Countries Lived &amp; Worked</div>
-                </div>
-              </div>
-
-              <div class="details-grid">
-                <div class="detail-row">
-                  <div class="detail-item">
-                    <span class="detail-label">Current Role</span>
-                    <span class="detail-value">ML Engineer II @ Smartly</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Specialization</span>
-                    <span class="detail-value">LLMs, RAG, Agentic Workflows</span>
-                  </div>
-                </div>
-                <div class="detail-row">
-                  <div class="detail-item">
-                    <span class="detail-label">Education</span>
-                    <span class="detail-value">EDISS (Åbo Akademi) &amp; UIB; BS CS (U of Punjab)</span>
-                  </div>
-                  <div class="detail-item">
-                    <span class="detail-label">Languages</span>
-                    <span class="detail-value">English (Professional), Punjabi/Urdu (Native)</span>
-                  </div>
-                </div>
+                <p>I hold a fully funded Erasmus Mundus dual Master’s degree — one of 23 selected worldwide — across Åbo Akademi University (Finland) and UIB (Spain), specialising in intelligent systems and computer vision. I enjoy mentoring engineers, driving technical strategy, and shipping systems that are observable, scalable, and built to last.</p>
               </div>
 
               <div class="cta-section">
@@ -301,100 +271,45 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row">
-            <div class="col-lg-6">
-              <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
-                <h3>Machine Learning &amp; AI</h3>
-                <div class="skills-animation">
-                  <div class="skill-item">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <h4>LLMs &amp; RAG</h4>
-                      <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="skill-tooltip">Designing and deploying Retrieval-Augmented Generation pipelines with large language models</div>
-                  </div>
-
-                  <div class="skill-item">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <h4>NLP &amp; Agentic Workflows</h4>
-                      <span class="skill-percentage">85%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="skill-tooltip">NLP pipelines with HuggingFace and LangChain; multi-agent orchestration systems</div>
-                  </div>
-
-                  <div class="skill-item">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <h4>LLM Evaluation (ROUGE/BERTScore/LLM-as-Judge)</h4>
-                      <span class="skill-percentage">85%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="skill-tooltip">Benchmarking open LLMs with ROUGE, BLEU, BERTScore, and LLM-as-judge across generation tasks</div>
-                  </div>
-
-                  <div class="skill-item">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <h4>Python &amp; ML Frameworks</h4>
-                      <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="skill-tooltip">Python, PyTorch, HuggingFace Transformers, scikit-learn, LangChain</div>
-                  </div>
-                </div>
-              </div><!-- End Frontend Skills -->
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Machine Learning &amp; AI</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">LLMs</span>
+                <span class="skill-tag">RAG</span>
+                <span class="skill-tag">Agentic Workflows</span>
+                <span class="skill-tag">NLP</span>
+                <span class="skill-tag">HuggingFace</span>
+                <span class="skill-tag">LangChain</span>
+                <span class="skill-tag">LLM Evaluation</span>
+                <span class="skill-tag">Computer Vision</span>
+                <span class="skill-tag">scikit-learn</span>
+                <span class="skill-tag">Vector Databases</span>
+              </div>
             </div>
-
-            <div class="col-lg-6">
-              <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
-                <h3>Cloud-Native &amp; MLOps</h3>
-                <div class="skills-animation">
-                  <div class="skill-item">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <h4>Kubernetes &amp; Docker</h4>
-                      <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="skill-tooltip">Container orchestration and packaging with Kubernetes and Docker</div>
-                  </div>
-
-                  <div class="skill-item">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <h4>Observability (OpenTelemetry, Prometheus, Grafana)</h4>
-                      <span class="skill-percentage">85%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="skill-tooltip">Instrumentation and monitoring with OpenTelemetry, Prometheus, Grafana</div>
-                  </div>
-
-                  <div class="skill-item">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <h4>MLFlow &amp; Experimentation</h4>
-                      <span class="skill-percentage">80%</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="skill-tooltip">Tracking experiments and model lifecycle with MLFlow</div>
-                  </div>
-                </div>
-              </div><!-- End Backend Skills -->
+          </div>
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <h3>Infrastructure &amp; MLOps</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">MLFlow</span>
+                <span class="skill-tag">OpenTelemetry</span>
+                <span class="skill-tag">Prometheus</span>
+                <span class="skill-tag">Grafana</span>
+                <span class="skill-tag">Jaeger</span>
+                <span class="skill-tag">Fluentd</span>
+                <span class="skill-tag">Microservices</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Linux</span>
+              </div>
             </div>
+          </div>
         </div>
-
       </div>
 
     </section><!-- /Skills Section -->
@@ -415,288 +330,168 @@
 
     </section><!-- /Resume Section -->
 
-    <!-- Portfolio Section -->
-<!--     <section id="portfolio" class="portfolio section"> -->
-<!--  -->
-<!--        -->
-<!--       <div class="container section-title" data-aos="fade-up"> -->
-<!--         <h2>Portfolio</h2> -->
-<!--         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-<!--       </div> -->
-<!--  -->
-<!--       <div class="container" data-aos="fade-up" data-aos-delay="100"> -->
-<!--  -->
-<!--         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order"> -->
-<!--  -->
-<!--           <div class="row"> -->
-<!--             <div class="col-lg-3 filter-sidebar"> -->
-<!--               <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150"> -->
-<!--                   <ul class="portfolio-filters isotope-filters"> -->
-<!--                     <li data-filter="*" class="filter-active">All</li> -->
-<!--                     <li data-filter=".filter-genai">GenAI</li> -->
-<!--                     <li data-filter=".filter-rag">RAG</li> -->
-<!--                     <li data-filter=".filter-talks">Talks</li> -->
-<!--                     <li data-filter=".filter-datasets">Datasets</li> -->
-<!--                     <li data-filter=".filter-tools">Tools</li> -->
-<!--                   </ul> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--  -->
-<!--             <div class="col-lg-9"> -->
-<!--               <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200"> -->
-<!--  -->
-<!--                   <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-genai"> -->
-<!--                     <div class="portfolio-wrap"> -->
-<!--                       <img src="assets/img/portfolio/portfolio-portrait-1.webp" class="img-fluid" alt="Portfolio Image" loading="lazy"> -->
-<!--                       <div class="portfolio-info"> -->
-<!--                         <div class="content"> -->
-<!--                           <span class="category">GenAI</span> -->
-<!--                           <h4>Modular GenAI Platform @ Nokia</h4> -->
-<!--                           <div class="portfolio-links"> -->
-<!--                             <a href="assets/img/portfolio/portfolio-portrait-1.webp" class="glightbox" title="Modular GenAI Platform @ Nokia"><i class="bi bi-plus-lg"></i></a> -->
-<!--                             <a href="#" title="More Details"><i class="bi bi-arrow-right"></i></a> -->
-<!--                           </div> -->
-<!--                         </div> -->
-<!--                       </div> -->
-<!--                     </div> -->
-<!--                   </div> -->
-<!--  -->
-<!--                   <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-rag"> -->
-<!--                     <div class="portfolio-wrap"> -->
-<!--                       <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy"> -->
-<!--                       <div class="portfolio-info"> -->
-<!--                         <div class="content"> -->
-<!--                           <span class="category">RAG</span> -->
-<!--                           <h4>RAG for Enterprise Search (on-prem)</h4> -->
-<!--                           <div class="portfolio-links"> -->
-<!--                             <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox" title="RAG for Enterprise Search"><i class="bi bi-plus-lg"></i></a> -->
-<!--                             <a href="#" title="More Details"><i class="bi bi-arrow-right"></i></a> -->
-<!--                           </div> -->
-<!--                         </div> -->
-<!--                       </div> -->
-<!--                     </div> -->
-<!--                   </div> -->
-<!--  -->
-<!--                   <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-talks"> -->
-<!--                     <div class="portfolio-wrap"> -->
-<!--                       <img src="assets/img/portfolio/portfolio-portrait-2.webp" class="img-fluid" alt="Portfolio Image" loading="lazy"> -->
-<!--                       <div class="portfolio-info"> -->
-<!--                         <div class="content"> -->
-<!--                           <span class="category">Talks</span> -->
-<!--                           <h4>LLM Benchmarking: Llama3, Mistral, Gemma</h4> -->
-<!--                           <div class="portfolio-links"> -->
-<!--                             <a href="assets/img/portfolio/portfolio-portrait-2.webp" class="glightbox" title="LLM Benchmarking"><i class="bi bi-plus-lg"></i></a> -->
-<!--                             <a href="#" title="More Details"><i class="bi bi-arrow-right"></i></a> -->
-<!--                           </div> -->
-<!--                         </div> -->
-<!--                       </div> -->
-<!--                     </div> -->
-<!--                   </div> -->
-<!--  -->
-<!--                   <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-datasets"> -->
-<!--                     <div class="portfolio-wrap"> -->
-<!--                       <img src="assets/img/portfolio/portfolio-portrait-4.webp" class="img-fluid" alt="Portfolio Image" loading="lazy"> -->
-<!--                       <div class="portfolio-info"> -->
-<!--                         <div class="content"> -->
-<!--                           <span class="category">Datasets</span> -->
-<!--                           <h4>AIS Dataset for Maritime Research</h4> -->
-<!--                           <div class="portfolio-links"> -->
-<!--                             <a href="assets/img/portfolio/portfolio-portrait-4.webp" class="glightbox" title="AIS Dataset for Maritime Research"><i class="bi bi-plus-lg"></i></a> -->
-<!--                             <a href="#" title="More Details"><i class="bi bi-arrow-right"></i></a> -->
-<!--                           </div> -->
-<!--                         </div> -->
-<!--                       </div> -->
-<!--                     </div> -->
-<!--                   </div> -->
-<!--  -->
-<!--                   <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-genai"> -->
-<!--                     <div class="portfolio-wrap"> -->
-<!--                       <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="Portfolio Image" loading="lazy"> -->
-<!--                       <div class="portfolio-info"> -->
-<!--                         <div class="content"> -->
-<!--                           <span class="category">GenAI</span> -->
-<!--                           <h4>Agentic Workflows PoC</h4> -->
-<!--                           <div class="portfolio-links"> -->
-<!--                             <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox" title="Agentic Workflows PoC"><i class="bi bi-plus-lg"></i></a> -->
-<!--                             <a href="#" title="More Details"><i class="bi bi-arrow-right"></i></a> -->
-<!--                           </div> -->
-<!--                         </div> -->
-<!--                       </div> -->
-<!--                     </div> -->
-<!--                   </div> -->
-<!--  -->
-<!--                   <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tools"> -->
-<!--                     <div class="portfolio-wrap"> -->
-<!--                       <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="Portfolio Image" loading="lazy"> -->
-<!--                       <div class="portfolio-info"> -->
-<!--                         <div class="content"> -->
-<!--                           <span class="category">Tools</span> -->
-<!--                           <h4>Observability for ML (Otel + Grafana)</h4> -->
-<!--                           <div class="portfolio-links"> -->
-<!--                             <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox" title="Observability for ML"><i class="bi bi-plus-lg"></i></a> -->
-<!--                             <a href="#" title="More Details"><i class="bi bi-arrow-right"></i></a> -->
-<!--                           </div> -->
-<!--                         </div> -->
-<!--                       </div> -->
-<!--                     </div> -->
-<!--                   </div> -->
-<!--  -->
-<!--               </div> -->
-<!--             </div> -->
-<!--           </div> -->
-<!--  -->
-<!--         </div> -->
-<!--  -->
-<!--       </div> -->
-<!--  -->
-<!--     </section> -->
+    <!-- Projects Section -->
+    <section id="projects" class="services section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>A selection of work across GenAI platforms, LLM research, and NLP engineering.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <span class="project-company">Nokia · 2023 – 2026</span>
+              <h3>Modular GenAI Platform</h3>
+              <p>Led end-to-end development of a production GenAI platform with RAG pipelines, agentic workflows, and distributed LLM training deployed on private on-prem Kubernetes clusters.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">RAG</span>
+                <span class="tech-tag">LLMs</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">MLFlow</span>
+                <span class="tech-tag">OpenTelemetry</span>
+                <span class="tech-tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <span class="project-company">Nokia · 2024</span>
+              <h3>Open LLM Evaluation Study</h3>
+              <p>Systematic evaluation of Llama 3, Mistral, and Gemma across summarization, code generation, and conversational tasks. Benchmarked using ROUGE, BLEU, BERTScore, and LLM-as-judge — surfacing key accuracy and consistency trade-offs to guide model selection.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Llama 3</span>
+                <span class="tech-tag">Mistral</span>
+                <span class="tech-tag">Gemma</span>
+                <span class="tech-tag">BERTScore</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">HuggingFace</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-chat-left-text"></i>
+              </div>
+              <span class="project-company">Arbisoft · 2020 – 2022</span>
+              <h3>NLP Review Intelligence</h3>
+              <p>Built NLP tagging pipelines to classify and filter user reviews on travel platforms including KAYAK, enabling hotel-specific tag extraction (cleanliness, service) for smarter personalised search and improved SEO discoverability.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">HuggingFace</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Translation</span>
+                <span class="tech-tag">KAYAK</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Projects Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
         <p>Areas where I can help you build, evaluate, and scale AI systems from prototype to production.</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
 
-        <div class="service-header">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12">
-              <div class="service-intro">
-                <h2 class="service-heading">
-                  <div>Production-ready</div>
-                  <div><span>AI &amp; GenAI solutions</span></div>
-                </h2>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-search"></i>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="service-summary">
-                <p>
-                  From LLM selection and RAG pipelines to cloud-native deployment and observability — I bring end-to-end expertise to help teams ship reliable AI systems.
-                </p>
-                <a href="#contact" class="service-btn">
-                  Get In Touch
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+              <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3><a href="#contact">RAG &amp; <span>LLM Applications</span></a></h3>
+              <p>Designing and deploying Retrieval-Augmented Generation pipelines and conversational AI systems for enterprise search and knowledge management.</p>
             </div>
           </div>
-        </div>
 
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-card position-relative z-1">
-                <div class="service-icon">
-                  <i class="bi bi-search"></i>
-                </div>
-                <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-                <h3>
-                  <a href="#contact">
-                    RAG &amp; <span>LLM Applications</span>
-                  </a>
-                </h3>
-                <p>
-                  Designing and deploying Retrieval-Augmented Generation pipelines and conversational AI systems for enterprise search and knowledge management.
-                </p>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-diagram-3"></i>
               </div>
+              <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3><a href="#contact">Agentic <span>Workflows</span></a></h3>
+              <p>Building multi-tool and multi-agent orchestration systems for complex, autonomous enterprise tasks.</p>
             </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-card position-relative z-1">
-                <div class="service-icon">
-                  <i class="bi bi-diagram-3"></i>
-                </div>
-                <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-                <h3>
-                  <a href="#contact">
-                    Agentic <span>Workflows</span>
-                  </a>
-                </h3>
-                <p>
-                  Building multi-tool and multi-agent orchestration systems for complex, autonomous enterprise tasks.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-card position-relative z-1">
-                <div class="service-icon">
-                  <i class="bi bi-activity"></i>
-                </div>
-                <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-                <h3>
-                  <a href="#contact">
-                    MLOps &amp; <span>Observability</span>
-                  </a>
-                </h3>
-                <p>
-                  Full experiment tracking with MLFlow, distributed tracing with OpenTelemetry, and dashboards via Prometheus and Grafana.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-card position-relative z-1">
-                <div class="service-icon">
-                  <i class="bi bi-cloud-arrow-up"></i>
-                </div>
-                <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-                <h3>
-                  <a href="#contact">
-                    Kubernetes &amp; <span>Microservices</span>
-                  </a>
-                </h3>
-                <p>
-                  Cloud-native microservice architecture, containerisation with Docker, and on-prem Kubernetes cluster management.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-card position-relative z-1">
-                <div class="service-icon">
-                  <i class="bi bi-bar-chart-line"></i>
-                </div>
-                <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-                <h3>
-                  <a href="#contact">
-                    LLM Evaluation &amp; <span>Benchmarking</span>
-                  </a>
-                </h3>
-                <p>
-                  Rigorous model assessment using ROUGE, BLEU, BERTScore, and LLM-as-judge across summarization, code generation, and conversational tasks.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-card position-relative z-1">
-                <div class="service-icon">
-                  <i class="bi bi-people"></i>
-                </div>
-                <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                  <i class="bi bi-arrow-up-right"></i>
-                </a>
-                <h3>
-                  <a href="#contact">
-                    Team Leadership &amp; <span>Mentoring</span>
-                  </a>
-                </h3>
-                <p>
-                  Leading engineering teams, running agile sprints, mentoring junior engineers, and aligning technical roadmaps with business strategy.
-                </p>
-              </div>
-            </div>
-        </div>
+          </div>
 
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3><a href="#contact">MLOps &amp; <span>Observability</span></a></h3>
+              <p>Full experiment tracking with MLFlow, distributed tracing with OpenTelemetry, and dashboards via Prometheus and Grafana.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-cloud-arrow-up"></i>
+              </div>
+              <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3><a href="#contact">Kubernetes &amp; <span>Microservices</span></a></h3>
+              <p>Cloud-native microservice architecture, containerisation with Docker, and on-prem Kubernetes cluster management.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3><a href="#contact">LLM Evaluation &amp; <span>Benchmarking</span></a></h3>
+              <p>Rigorous model assessment across summarization, code generation, and conversational tasks — guiding model selection for production use.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <a href="#contact" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3><a href="#contact">Team Leadership &amp; <span>Mentoring</span></a></h3>
+              <p>Leading engineering teams, running agile sprints, mentoring junior engineers, and aligning technical roadmaps with business strategy.</p>
+            </div>
+          </div>
+
+        </div>
       </div>
 
     </section><!-- /Services Section -->
@@ -732,21 +527,31 @@
 
                 <div class="info-item">
                   <div class="icon-box">
-                    <i class="bi bi-telephone"></i>
-                  </div>
-                  <div class="content">
-                    <h4>Phone</h4>
-                    <p>+358 45 1960065</p>
-                  </div>
-                </div>
-
-                <div class="info-item">
-                  <div class="icon-box">
                     <i class="bi bi-envelope"></i>
                   </div>
                   <div class="content">
                     <h4>Email</h4>
                     <p>ulhaqi12@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="icon-box">
+                    <i class="bi bi-linkedin"></i>
+                  </div>
+                  <div class="content">
+                    <h4>LinkedIn</h4>
+                    <p><a href="https://www.linkedin.com/in/ulhaqi12/" target="_blank" rel="noopener" style="color: inherit;">linkedin.com/in/ulhaqi12</a></p>
+                  </div>
+                </div>
+
+                <div class="open-to-box">
+                  <h5>Open to</h5>
+                  <div class="open-tags">
+                    <span class="open-tag">AI Consulting</span>
+                    <span class="open-tag">Research Collaboration</span>
+                    <span class="open-tag">Speaking &amp; Talks</span>
+                    <span class="open-tag">Advisory Roles</span>
                   </div>
                 </div>
               </div>
