@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Ikram Ul Haq — ML Engineer II | AI & GenAI</title>
-  <meta name="description" content="ML Engineer II at Smartly based in Helsinki, Finland. Building AI-powered products with LLMs, RAG, agentic workflows, and cloud-native microservices. Previously AI Tech Lead at Nokia.">
+  <meta name="description" content="ML Engineer II at Smartly based in Helsinki, Finland. Shipping production generative AI: LLM evaluation, agents, gateways and observability. Previously AI Tech Lead at Nokia.">
   <meta name="keywords" content="Ikram Ul Haq, ML Engineer, GenAI, LLMs, RAG, Kubernetes, Helsinki, Finland">
   <meta property="og:title" content="Ikram Ul Haq — ML Engineer II | AI & GenAI">
-  <meta property="og:description" content="ML Engineer II at Smartly. Building AI-powered products with LLMs, RAG, and cloud-native microservices.">
+  <meta property="og:description" content="ML Engineer II at Smartly. LLM evaluation, agents and production generative AI.">
   <meta property="og:url" content="https://ulhaqi12.github.io">
   <meta property="og:type" content="website">
 
@@ -116,7 +116,7 @@
                 <h1>Ikram <span class="accent-text">Ul Haq</span></h1>
                 <!-- <h2>Ikram Ul Haq</h2> -->
                 <p class="lead">I'm an <span class="typed" data-typed-items="ML Engineer II @ Smartly"></span></p>
-                <p class="description">ML Engineer II at Smartly in Helsinki, building AI-powered products. Previously led GenAI platform development at Nokia — LLMs, RAG, agentic workflows, and Kubernetes-native microservices with observability-first design.</p>
+                <p class="description">ML Engineer II at Smartly in Helsinki, working on the generative pipelines behind ad content (text, images, video), the production LLM gateway, and evaluation for non-deterministic AI agents. Previously AI Tech Lead at Nokia, leading a GenAI platform on on-prem Kubernetes.</p>
 
                 <div class="hero-actions">
                   <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -195,9 +195,9 @@
               </div>
 
               <div class="description">
-                <p>ML Engineer II at Smartly in Helsinki, with 6+ years of experience in machine learning and software engineering. Previously an AI Tech Lead at Nokia, where I led a team building a production GenAI platform — RAG pipelines, agentic workflows, and distributed LLM training on private Kubernetes clusters, with observability-first design using MLFlow, OpenTelemetry, and Grafana.</p>
+                <p>AI/ML engineer with 6+ years of production software and ML experience, 3+ of them shipping LLM and generative AI systems. At Smartly I work on the generative pipelines behind customer ad content (text, images, video), own the production LLM gateway and LLM/CV observability, and built the evaluation pipeline for a non-deterministic AI agent. Previously AI Tech Lead at Nokia, leading the team that built a GenAI platform (RAG, agentic workflows, distributed LLM fine-tuning) on on-prem Kubernetes. I care about measuring what ships: defining what a correct result is, building datasets that catch regressions, and instrumenting systems so failures arrive with enough context to fix.</p>
 
-                <p>I hold a fully funded Erasmus Mundus dual Master’s in Engineering of Data-Intensive Intelligent Software Systems (EDISS) — one of 23 selected worldwide — from Åbo Akademi University (Finland) and UIB (Spain), specialising in computer vision. I enjoy mentoring engineers, driving technical strategy, and shipping systems built to last.</p>
+                <p>I hold a fully funded Erasmus Mundus dual Master’s in Engineering of Data-Intensive Intelligent Software Systems (EDISS) — one of 23 selected worldwide — from Åbo Akademi University (Finland) and UIB (Spain), specialising in computer vision. I enjoy mentoring engineers and shipping systems built to last.</p>
 
                 <p>I love meeting new people — feel free to say hello!</p>
               </div>
@@ -294,6 +294,10 @@
                 <span class="skill-tag">Computer Vision</span>
                 <span class="skill-tag">scikit-learn</span>
                 <span class="skill-tag">Vector Databases</span>
+                <span class="skill-tag">LiteLLM</span>
+                <span class="skill-tag">vLLM</span>
+                <span class="skill-tag">MCP</span>
+                <span class="skill-tag">TensorFlow</span>
               </div>
             </div>
           </div>
@@ -304,12 +308,16 @@
                 <span class="skill-tag">Kubernetes</span>
                 <span class="skill-tag">Docker</span>
                 <span class="skill-tag">MLFlow</span>
+                <span class="skill-tag">Langfuse</span>
                 <span class="skill-tag">OpenTelemetry</span>
                 <span class="skill-tag">Prometheus</span>
                 <span class="skill-tag">Grafana</span>
                 <span class="skill-tag">Jaeger</span>
                 <span class="skill-tag">Fluentd</span>
                 <span class="skill-tag">Microservices</span>
+                <span class="skill-tag">Argo</span>
+                <span class="skill-tag">Jenkins</span>
+                <span class="skill-tag">SonarQube</span>
                 <span class="skill-tag">Git</span>
                 <span class="skill-tag">Linux</span>
               </div>
@@ -350,11 +358,45 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-card position-relative z-1">
               <div class="service-icon">
+                <i class="bi bi-clipboard-check"></i>
+              </div>
+              <span class="project-company">Smartly · 2026 – Present</span>
+              <h3>Agent Self-Improvement Evaluation</h3>
+              <p>Built an evaluation pipeline for an internal AI agent (Hermes), automating quality assessment of non-deterministic outputs and feeding results back into iterative refinement.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Agents</span>
+                <span class="tech-tag">LLM-as-judge</span>
+                <span class="tech-tag">Evaluation</span>
+                <span class="tech-tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-hdd-network"></i>
+              </div>
+              <span class="project-company">Smartly · 2026 – Present</span>
+              <h3>LLM Gateway &amp; Observability</h3>
+              <p>Deployed LiteLLM (3 replicas) as the production gateway for model routing, usage/cost monitoring and key management. Led the Langfuse vs. MLflow assessment across 13 production apps (8 LLM, 5 CV/ML) and rolled out tracing.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">LiteLLM</span>
+                <span class="tech-tag">Langfuse</span>
+                <span class="tech-tag">MLflow</span>
+                <span class="tech-tag">MCP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
                 <i class="bi bi-diagram-3"></i>
               </div>
-              <span class="project-company">Nokia · 2023 – 2026</span>
+              <span class="project-company">Nokia · 2025 – 2026</span>
               <h3>Modular GenAI Platform</h3>
-              <p>Led end-to-end development of a production GenAI platform with RAG pipelines, agentic workflows, and distributed LLM training deployed on private on-prem Kubernetes clusters.</p>
+              <p>Owned technical design and delivery of a modular GenAI platform spanning RAG, agentic workflows, and distributed LLM fine-tuning across GPU nodes on private on-prem Kubernetes, with end-to-end tracing (OpenTelemetry, Jaeger, Prometheus, Grafana).</p>
               <div class="tech-tags">
                 <span class="tech-tag">RAG</span>
                 <span class="tech-tag">LLMs</span>
@@ -373,7 +415,7 @@
               </div>
               <span class="project-company">Nokia · 2024</span>
               <h3>Open LLM Evaluation Study</h3>
-              <p>Systematic evaluation of Llama 3, Mistral, and Gemma across summarization, code generation, and conversational tasks. Benchmarked using ROUGE, BLEU, BERTScore, and LLM-as-judge — surfacing key accuracy and consistency trade-offs to guide model selection.</p>
+              <p>Systematic evaluation of Llama 3, Mistral, and Gemma across summarization, code generation, and conversational tasks. Run on open benchmarks (CNN/DailyMail, CoNaLa, Chatbot Arena) — findings informed model selection and a master's thesis on industrial LLM applicability.</p>
               <div class="tech-tags">
                 <span class="tech-tag">Llama 3</span>
                 <span class="tech-tag">Mistral</span>
@@ -500,7 +542,7 @@
                 <i class="bi bi-arrow-up-right"></i>
               </a>
               <h3><a href="#contact">MLOps &amp; <span>Observability</span></a></h3>
-              <p>Full experiment tracking with MLFlow, distributed tracing with OpenTelemetry, and dashboards via Prometheus and Grafana.</p>
+              <p>LLM and CV observability with Langfuse and MLflow, distributed tracing with OpenTelemetry, LLM gateways (LiteLLM) for routing and cost monitoring, and dashboards via Prometheus and Grafana.</p>
             </div>
           </div>
 
@@ -526,7 +568,7 @@
                 <i class="bi bi-arrow-up-right"></i>
               </a>
               <h3><a href="#contact">LLM Evaluation &amp; <span>Benchmarking</span></a></h3>
-              <p>Rigorous model assessment across summarization, code generation, and conversational tasks — guiding model selection for production use.</p>
+              <p>Agent and LLM eval pipelines, benchmark design on open datasets, LLM-as-judge, and regression gating — guiding model selection for production use.</p>
             </div>
           </div>
 
